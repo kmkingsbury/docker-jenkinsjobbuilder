@@ -17,4 +17,6 @@ RUN mkdir -p $WORKON_HOME
 RUN virtualenv ~/.virtualenvs/jenkins
 RUN source ~/.virtualenvs/jenkins/bin/activate
 RUN pip install jenkins-job-builder
+
+# Really want a shell here, this command will exit, the docker run in the readme will provide the shell.
 RUN /bin/bash 
